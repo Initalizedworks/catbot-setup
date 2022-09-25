@@ -46,7 +46,7 @@ fi
 ./remove-legacy
 
 if [ ! -d "./cathook" ]; then
-    URL="$(curl --max-time 10 -Ls -o /dev/null -w %{url_effective} https://cathook.club/s/ch/git || echo error)"
+    URL="$(curl --max-time 10 -Ls -o /dev/null -w %{url_effective} https://github.com/joe20050108/voidhook || echo error)"
     git clone --recursive $URL
 fi
 
@@ -101,7 +101,7 @@ if [ ! -d "./cathook-ipc-server" ]; then
 fi
 
 if [ ! -d "./cathook-ipc-web-panel" ]; then
-    git clone --recursive https://github.com/nullworks/cathook-ipc-web-panel
+    git clone --recursive https://github.com/joe20050108/cathook-ipc-web-panel
     pushd cathook-ipc-web-panel
     ./update.sh
     popd
