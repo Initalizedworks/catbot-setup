@@ -46,10 +46,8 @@ fi
 ./remove-legacy
 
 if [ ! -d "./cathook" ]; then
-    URL="$(curl --max-time 10 -Ls -o /dev/null -w %{url_effective} https://github.com/joe20050108/voidhook || echo error)"
+    URL="$(curl --max-time 10 -Ls -o /dev/null -w %{url_effective} https://github.com/joe20050108/cathook || echo error)"
     git clone --recursive $URL
-    # Funny!
-    mv voidhook cathook
 fi
 
 if [ -d ~/.steam/steam/steamapps/common/Team\ Fortress\ 2/tf/maps/ ]; then
