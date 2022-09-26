@@ -100,9 +100,9 @@ if [ ! -d "./cathook-ipc-server" ]; then
     popd
 fi
 
-if [ ! -d "./cathook-ipc-web-panel" ]; then
+if [ ! -d "./voidhook-ipc-web-panel" ]; then
     git clone --recursive https://github.com/joe20050108/voidhook-ipc-web-panel
-    pushd cathook-ipc-web-panel
+    pushd voidhook-ipc-web-panel
     ./update.sh
     popd
 fi
@@ -114,9 +114,9 @@ if [ ! -d "./nullnexus-proxy" ]; then
     popd
 fi
 
-if [ ! -d "./cathook-ipc-web-panel/logs" ]; then
-    mkdir -p ./cathook-ipc-web-panel/logs
-    touch ./cathook-ipc-web-panel/logs/main.log
+if [ ! -d "./voidhook-ipc-web-panel/logs" ]; then
+    mkdir -p ./voidhook-ipc-web-panel/logs
+    touch ./voidhook-ipc-web-panel/logs/main.log
 fi
 
 sudo sed -i 's/^restricted-network yes/# restricted-network yes/g' /etc/firejail/firejail.config

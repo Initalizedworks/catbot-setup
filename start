@@ -29,7 +29,7 @@ ipcserver=$( ps faux | grep '/opt/cathook/ipc/bin/server' | grep -vw grep | awk 
 if [ -e "/tmp/ncat-cathook-webpanel.pid" ] && ps -p `cat "/tmp/ncat-cathook-webpanel.pid"` >/dev/null; then
     echo IPC panel already running.
 else
-    pushd cathook-ipc-web-panel
+    pushd voidhook-ipc-web-panel
     sudo PATH="$PATH" STEAM_LD_PRELOAD="$(cd ../ && pwd)/just-disable-vac/build/bin64/libvpcfs.so.0:$(cd ../ && pwd)/just-disable-vac/build/bin32/libvpcfs.so.0" bash ./run.sh &
     popd
 fi
