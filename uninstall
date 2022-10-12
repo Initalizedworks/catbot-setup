@@ -6,7 +6,7 @@ read -p "Press ENTER to continue"
 rm -rf ./account-generator
 rm -rf ./build
 rm -rf ./cathook
-rm -rf ./cathook-ipc-server
+rm -rf ./voidhook-ipc-server
 rm -rf ./cathook-ipc-web-panel
 rm -rf ./just-disable-vac
 rm -rf ./user_instances

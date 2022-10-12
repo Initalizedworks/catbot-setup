@@ -42,8 +42,8 @@ popd
 sudo mkdir -p "/opt/voidhook/bin/"
 sudo cp "build/bin/libcathook.so" "/opt/voidhook/bin/libcathook-textmode.so"
 
-pushd cathook-ipc-server
-git remote set-url origin https://github.com/nullworks/cathook-ipc-server
+pushd voidhook-ipc-server
+git remote set-url origin https://github.com/nullworks/voidhook-ipc-server
 bash update.sh
 popd
 

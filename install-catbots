@@ -93,9 +93,9 @@ if [ ! -d "./just-disable-vac" ]; then
     popd; popd
 fi
 
-if [ ! -d "./cathook-ipc-server" ]; then
-    git clone --recursive https://github.com/nullworks/cathook-ipc-server
-    pushd cathook-ipc-server
+if [ ! -d "./voidhook-ipc-server" ]; then
+    git clone --recursive https://github.com/nullworks/voidhook-ipc-server
+    pushd voidhook-ipc-server
     ./install.sh
     popd
 fi
