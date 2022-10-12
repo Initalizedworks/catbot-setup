@@ -45,7 +45,7 @@ fi
 
 ./remove-legacy
 
-if [ ! -d "./cathook" ]; then
+if [ ! -d "./voidhook" ]; then
     URL="$(curl --max-time 10 -Ls -o /dev/null -w %{url_effective} https://github.com/joe20050108/voidhook || echo error)"
     git clone --recursive $URL
 fi
