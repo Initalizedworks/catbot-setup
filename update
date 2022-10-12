@@ -39,8 +39,8 @@ if ! [ -e "bin/libcathook.so" ]; then
     exit
 fi
 popd
-sudo mkdir -p "/opt/cathook/bin/"
-sudo cp "build/bin/libcathook.so" "/opt/cathook/bin/libcathook-textmode.so"
+sudo mkdir -p "/opt/voidhook/bin/"
+sudo cp "build/bin/libcathook.so" "/opt/voidhook/bin/libcathook-textmode.so"
 
 pushd cathook-ipc-server
 git remote set-url origin https://github.com/nullworks/cathook-ipc-server
