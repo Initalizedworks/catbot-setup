@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Syncs cat_matchexec with github.
+if ! [ -e "./cat_matchexec" ]; then
+	# Clone repo
+	git clone https://github.com/joe20050108/cat_matchexec.git
+fi
+
+if ! [ -e "/opt/steamapps/common/Team Fortress 2/tf/" ]; then
+	echo "Please start catbots using ./start before syncing cat_matchexec.cfg!"
+	exit
+fi
+
+cd ./cat_matchexec
+git pull
+cp -f ./cat_matchexec.cfg /opt/steamapps/common/"Team Fortress 2"/tf/cfg/cat_matchexe.cfg
+echo "Synchronized friends list from github."
+exit
