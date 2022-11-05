@@ -12,6 +12,6 @@ fi
 
 cd ./cat_matchexec
 git pull
-cp -f ./cat_matchexec.cfg /opt/steamapps/common/"Team Fortress 2"/tf/cfg/cat_matchexe.cfg
+cp -f ./cat_matchexec.cfg /opt/steamapps/common/'Team Fortress 2'/tf/cfg/cat_matchexec.cfg
 echo "Synchronized friends list from github."
 exit
