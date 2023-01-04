@@ -86,7 +86,7 @@ if [ ! -f /opt/voidhook/bin/libcathook-textmode.so ]; then
 fi
 
 if [ ! -d "./just-disable-vac" ]; then
-    git clone https://gitlab.com/nullworks/cathook/just-disable-vac
+    git clone https://gitlab.com/explowz/cathook/just-disable-vac
     pushd just-disable-vac
     mkdir -p build && pushd build
     cmake .. && make
